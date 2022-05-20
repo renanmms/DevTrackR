@@ -113,5 +113,16 @@ namespace DevTrackR.API.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Deleta um pacote
+        /// </summary>
+        /// <param name="code"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpDelete("{code}/deletes")]
+        public IActionResult Delete(string code,  AddPackageUpdateInputModel model){
+            return Ok();
+        }
+
     }
 }
